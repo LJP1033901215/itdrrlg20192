@@ -1,6 +1,8 @@
 package com.itdr.utils;
 
 import java.security.MessageDigest;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * ClassName: MD5Util
@@ -57,6 +59,10 @@ public class MD5Util {
             "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
 
     public static void main(String[] args) {
-        System.out.println(MD5EncodeUtf8("123456"));
+        System.out.println(MD5EncodeUtf8("47bbe2fbe7d92d3be07c59bb09b788fad01c37a987eb4bbe067b6fb74994d79aapiCodescs.openlink.sales.order.pullapiVersion1.0appKey974885f2dea9b0224ebba36c323742c10b2b0d1a2671f92d01ed97f07bc74a36appSecret47bbe2fbe7d92d3be07c59bb09b788fad01c37a987eb4bbe067b6fb74994d79atimestamp2019-10-30 15:56:27token1adf1caaa0203cc94338ff7288af76bd{\"params\":{\"gift\":\"N\",\"orderNo\":\"120000000472\"}}47bbe2fbe7d92d3be07c59bb09b788fad01c37a987eb4bbe067b6fb74994d79a"));
+        System.out.println("26E1BB31BFCB967B689E0E57DF7272E5");
+        Date date = new Date();
+        SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        System.out.println(sf.format(date));
     }
 }

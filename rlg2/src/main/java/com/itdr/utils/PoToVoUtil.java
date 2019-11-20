@@ -31,7 +31,6 @@ public class PoToVoUtil {
         productVO.setCreateTime(product.getCreateTime());
         productVO.setUpdateTime(product.getUpdateTime());
         productVO.setIsNew(product.getIsNew());
-
         return productVO;
 
     }

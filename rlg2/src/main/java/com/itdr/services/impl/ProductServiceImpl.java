@@ -36,7 +36,7 @@ public class ProductServiceImpl implements ProductService {
         return ServerResponse.successRs(li);
     }
 
-    //.获取产品子分类
+    //.返回商品信息
     @Override
     public ServerResponse detail(Integer productId, Integer is_new, Integer is_hot, Integer is_banner) {
         //判断参数是不是为空

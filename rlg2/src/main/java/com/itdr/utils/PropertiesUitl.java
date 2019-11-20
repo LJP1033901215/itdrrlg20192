@@ -25,7 +25,6 @@ public class PropertiesUitl {
 
     //测试
     public static void main(String[] args) {
-
         System.out.println( getValue("imageHost"));
     }
 }

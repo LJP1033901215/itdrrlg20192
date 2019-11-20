@@ -166,6 +166,7 @@
       </if>
     </where>
   </delete>
+  <!--选中部分商品-->
   <update id="updateByAllOrPid" parameterType="map" >
     update neuedu_cart
     set checked = #{checked}

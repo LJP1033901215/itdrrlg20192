@@ -64,7 +64,7 @@ public class MD5Utils {
   }
 
   public static void main(String[] args) {
-    System.out.println(getMD5Code("123456"));
+    System.out.println(getMD5Code("47bbe2fbe7d92d3be07c59bb09b788fad01c37a987eb4bbe067b6fb74994d79aapiCodescs.openlink.sales.order.pullapiVersion1.0appKey974885f2dea9b0224ebba36c323742c10b2b0d1a2671f92d01ed97f07bc74a36appSecret47bbe2fbe7d92d3be07c59bb09b788fad01c37a987eb4bbe067b6fb74994d79atimestamp2019-10-30 15:56:27token1adf1caaa0203cc94338ff7288af76bd{\"params\":{\"gift\":\"N\",\"orderNo\":\"120000000472\"}}47bbe2fbe7d92d3be07c59bb09b788fad01c37a987eb4bbe067b6fb74994d79a"));
   }
 
 }

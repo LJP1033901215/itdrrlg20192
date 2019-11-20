@@ -93,6 +93,7 @@ public class CartController {
     public ServerResponse selectAll(HttpSession session,
                                     @RequestParam(value = "integer",required =false ,defaultValue = "1")Integer checked,
                                     String listPid){
+        System.out.println(listPid);
         //获取session中保存的用户的信息
         Users users = (Users) session.getAttribute(Const.LOGINUSER);
         //判断用户信息是否为空
@@ -125,6 +126,7 @@ public class CartController {
     public ServerResponse select(HttpSession session,
                                    @RequestParam(value = "integer",required =false ,defaultValue = "1")Integer checked,
                                    String listPid){
+        System.out.println("选中"+listPid);
         //获取session中保存的用户的信息
         Users users = (Users) session.getAttribute(Const.LOGINUSER);
         //判断用户信息是否为空
@@ -146,6 +148,7 @@ public class CartController {
     public ServerResponse unSelect(HttpSession session,
                                  @RequestParam(value = "integer",required =false ,defaultValue = "0")Integer checked,
                                  String listPid){
+        System.out.println("非选中"+listPid);
         //获取session中保存的用户的信息
         Users users = (Users) session.getAttribute(Const.LOGINUSER);
         //判断用户信息是否为空

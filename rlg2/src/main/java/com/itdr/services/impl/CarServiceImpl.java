@@ -150,6 +150,7 @@ public class CarServiceImpl implements CartService {
         }else {
             return ServerResponse.defeatedRs("购物车商品不存在");
         }
+
         return listCart(uid);//方法的复用
     }
 
@@ -198,7 +199,6 @@ public class CarServiceImpl implements CartService {
             if (i <= 0) {
                 return ServerResponse.defeatedRs("修改失败");
             }
-
         }
         CartVO cartVO = this.getCartVO(id);
         return ServerResponse.successRs(cartVO);
